@@ -1,0 +1,53 @@
+/*style.css*/
+body {
+	font-family: Georgia, serif;
+	background-color: #9df9ef;
+	text-align: center;
+}
+h1 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/*Include a set of normalization styles for your forms such as the Form area of Normalize.css*/
+/*Scroll friendly mobile first version*/
+/*Sectioned desktop version*/
+form {
+	margin: 0;
+	padding: 20px;
+	border: thick double #32a1ce;
+}
+/*Style text inputs fields*/
+/*email, tel, and date*/
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"] {
+	width: 100%;
+	padding:5px;
+	border: solid;
+	border-radius:4px;
+}
+form input[type="submit"] {
+	background-color: #5783db;
+	font-family: Georgia, serif;
+}
+/*Sectioned Desktop Version*/
+@media (min-width: 768px){
+	form{
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	/*Style text inputs fields*/
+	form input[type="email"]
+	form input[type="tel"]
+	form input[type="date"] {
+		width: 100%;
+		padding:5px;
+		border: solid;
+		border-radius:4px;
+	}
+	form input[type="submit"]{
+		background-color: #5783db;
+		font-family: Georgia, serif;
+	}
+}
